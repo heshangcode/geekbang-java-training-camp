@@ -4,9 +4,11 @@
 
 作业都是以分支命名
 
-- 预习课作业一：preview-01
-  - 编写一个 Servlet 程序，该 Servlet Forward 到某个 Servlet 或者 JSP 页面。
-  - 熟悉 RequestDispatcher。
+- 第一周作业：week-01
+1. 实现自定义标签 
+2. 编写自定义标签 tld 文件 
+3. 部署到 Servlet 应用
   - 运行方式：
     - 进入 servlet-web，运行命令：mvn clean package，在 target 找到 war 运行
     - 浏览器访问：127.0.0.1:8080/my 进入指定的 jsp 页面
+    - 查看控制台输出了在 jsp 里指定的值
