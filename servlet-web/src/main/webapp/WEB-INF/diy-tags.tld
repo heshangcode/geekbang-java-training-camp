@@ -8,12 +8,18 @@
     <short-name>diy</short-name>
     <uri>/diy-tags</uri>
 
-    <tag>
-        <name>common-response-headers</name>
-        <tag-class>ink.heshang.servlet.CommonResponseHeadersTag</tag-class>
-        <body-content>empty</body-content>
-    </tag>
+  <tag>
+      <name>commonResponseHeaders</name>
+      <tag-class>ink.heshang.servlet.CommonResponseHeadersTag</tag-class>
+      <body-content>scriptless</body-content>
 
+      <attribute>
+          <name>cacheControl</name>
+          <required>true</required>
+          <rtexprvalue>true</rtexprvalue>
+          <type>java.lang.String</type>
+      </attribute>
+  </tag>  
 
 </taglib>
 

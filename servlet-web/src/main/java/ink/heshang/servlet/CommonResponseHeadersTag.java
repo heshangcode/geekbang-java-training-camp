@@ -9,19 +9,30 @@ import javax.servlet.jsp.tagext.SimpleTagSupport;
 import java.io.IOException;
 
 /**
- * diy 返回请求头
+ * TODO
  *
  * @Author 微信公众号《和尚的破功之路》
- * @Date 2021/7/7 08:45
+ * @Date 2021/7/7 23:09
  */
-//public class CommonResponseHeadersTag extends SimpleTagSupport {
-public class CommonResponseHeadersTag {
-    //@Override
-    public void doTag() throws JspException, IOException {
-        ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
-        HttpServletResponse response = attributes.getResponse();
-        response.setHeader("Cache-Control", "no-cache");
-        response.setHeader("Pragma", "no-cache");
-        response.setDateHeader("Expires", -1);
+public class CommonResponseHeadersTag extends SimpleTagSupport {
+
+    private String cacheControl;
+
+    public String getCacheControl() {
+        return cacheControl;
     }
+
+    public void setCacheControl(String cacheControl) {
+        this.cacheControl = cacheControl;
+    }
+
+    @Override
+    public void doTag() throws JspException, IOException {
+        System.out.println(cacheControl);
+        //ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+        //HttpServletResponse response = attributes.getResponse();
+        //response.setHeader("Cache-Control", cacheControl);
+    }
+
+
 }
