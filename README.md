@@ -4,12 +4,7 @@
 
 作业都是以分支命名
 
-- 第一周作业：week-01
-    1. 实现自定义标签 
-    2. 编写自定义标签 tld 文件 
-    3. 部署到 Servlet 应用
-    
-- 运行方式：
-    - 进入 servlet-web，运行命令：mvn clean package，在 target 找到 war 运行
-    - 浏览器访问：127.0.0.1:8080/my 进入指定的 jsp 页面
-    - 查看控制台输出了在 jsp 里指定的值
+- 第二周作业：week-02 
+
+在 my-configuration 基础上，实现 ServletRequest 请求参 数的 ConfigSource（MicroProfile Config），提供参考：
+Apache Commons Configuration 中的 org.apache.commons.configuration.web.ServletRequestC onfiguration。
