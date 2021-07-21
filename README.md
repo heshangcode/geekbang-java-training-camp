@@ -4,7 +4,8 @@
 
 作业都是以分支命名
 
-- 第二周作业：week-02 
+- 第三周作业：week-03
 
-在 my-configuration 基础上，实现 ServletRequest 请求参 数的 ConfigSource（MicroProfile Config），提供参考：
-Apache Commons Configuration 中的 org.apache.commons.configuration.web.ServletRequestC onfiguration。
+通过 MicroProfile REST Client 实现 POST 接⼝去请求项⽬中 的 ShutdownEndpoint，URI：http://127.0.0.1:8080/actuator/shutdownletRequestC onfiguration。
+
+可选：完善 my-rest-client 框架 POST ⽅法，实现 org.geektimes.rest.client.DefaultInvocationBuilder#buildP ost ⽅法
